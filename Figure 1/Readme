@@ -1,1 +1,5 @@
+Files used in analysis of data in Figure 1. 
 
+This analysis also uses CNMF_E-master from github/zhoupc for extraction of single neuron signal from video data recorded through GRIN lenses, 
+github/NoRMCorre-master from flatironinstitute for movement correction of GRIN video data, and CellReg-master from github/zivlab for cell 
+tracking across different recording sessions. See manuscript for full citations.
