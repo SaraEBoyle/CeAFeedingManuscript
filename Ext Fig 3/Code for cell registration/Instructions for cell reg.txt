@@ -1,0 +1,10 @@
+1. Run adapt_sorted_before_cellreg.m from data folder first to create a file
+called sorted.m, which will contain ROI maps usable by cell reg. 
+2. Then run sara_reshape.m, specifying the data folders of the sessions you
+ want to align. This will save "spatial footprints", which you will need to
+run cell reg.
+3. Then, run CellReg.m. Make sure to closely follow the instructions in the
+GUI. DO NOT CLICK TOO MUCH. Do not try to close the warning messages. Don't
+press ok. The GUI is not stable. This will save cell_registered_struct.mat 
+in the location you choose, which will contain the identities of overlapping
+neurons
