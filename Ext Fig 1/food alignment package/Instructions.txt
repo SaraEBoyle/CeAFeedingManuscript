@@ -1,0 +1,8 @@
+1. Add the whole food 'alignment package" folder and subfolders to path
+2. Open align_to_event_frames.m
+3. Go to folder with data- should have signal.csv, boris file save as tabular 
+boris.csv, and the timing data from the videos, saved as csv.
+4. Adjust your variables. If using only 1 fiber, change the signal_fibers
+and control_fibers variables. 
+5. Click play, select autofluoresence time window and signal channel as usual
+6. It will automatically calculate average z score of each event scored in Boris.

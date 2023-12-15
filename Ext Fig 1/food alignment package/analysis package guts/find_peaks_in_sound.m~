@@ -1,0 +1,22 @@
+function [] = find_peaks_in_sound()
+    %% Finds the peaks in activity per trial pre sound, during sound, and post sound
+    pre_time = 20;
+    sound_time = 20;
+    post_time = 20;
+    pre_data = find(x_axis < 0);
+    sound_data_right = find(x_axis > 0);
+    sound_data_left = find(x_axis < (sound_time - 2));
+    
+    sound_data_right = x_axis(sound_data_right);
+    sound_data = find(sound_data_right < (sound_time - 2));
+    post_data = find(x_axis > sound_time);
+    
+    %Split the z_score data into pre, sound, and post
+    pre_data = z_US_trials(:, pre_data);
+    sound_data = z_US_trials(:, sound_data);
+    post_data = z_US_trials(:, post_data);
+    
+    pre_data_peaks = max(pre_data');
+    sound_data_peaks = max(sound_data');
+    post_data_peaks = max(post_data');
+end
